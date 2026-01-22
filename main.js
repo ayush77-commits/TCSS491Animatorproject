@@ -8,7 +8,8 @@ ASSET_MANAGER.downloadAll(() => {
 	const canvas = document.getElementById("gameWorld");
 	const ctx = canvas.getContext("2d");
 
-	gameEngine.addEntity(new IronMan());
+    ctx.drawImage(ASSET_MANAGER.getAsset("./ironman.png"), 0, 0);
+	//gameEngine.addEntity(new IronMan());
 
 	gameEngine.init(ctx);
 
